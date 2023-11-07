@@ -1,0 +1,115 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100;
+    height: 100px;
+    background-color: brown;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header-logo {
+    height: 100%;
+
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.hiden-block {
+    opacity: 0;
+    width: 400px;
+    height: 200px;
+    background-color: rgb(13, 200, 194);
+    transition: 0.5s;
+    transform: scale(0) rotate(0);
+    position: fixed;
+    right: -420%;
+}
+
+#check:checked~.hiden-block {
+    transform: scale(1) rotate(360deg);
+    opacity: 100%;
+    right: 0;
+}
+.label-hidden{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+
+}
+
+.label-hidden span{
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+
+    cursor: pointer;
+    position: relative;
+    
+}
+
+#check {
+    display: none;
+}
+body{
+    height: 1000px;
+}
+.negr{
+    background-color: blue;
+    height: 500px;
+}
+.label-hidden span:after{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: rgb(255, 0, 0);
+    position: absolute;
+    top: 8px;
+    transition: 0.5s;
+}
+.label-hidden span:before{
+    content: "";
+    display: block;
+    width: 20px;
+    height: 5px;
+    background-color: rgb(255, 2, 2);
+    position: absolute;
+    top: -8px;
+    transition: 0.5s;
+}
+#check:checked ~ .label-hidden span{
+    transform: rotate(59deg)
+
+}
+#check:checked ~ .label-hidden span::before{
+    transform: rotate(59deg);
+    top: 0;
+}
+#check:checked ~ .label-hidden span::after{
+    opacity: 0;
+    top: 0;
+}
