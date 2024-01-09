@@ -107,4 +107,18 @@ body {
   background-repeat: no-repeat;
   /* масштабирование картинки */
   background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+ .main{
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+ }
+
+
+.sidbar_social-media{
+  display: flex;
+  gap: 20px;
 }

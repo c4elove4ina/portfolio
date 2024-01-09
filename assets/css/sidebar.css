@@ -1,0 +1,13 @@
+.sidebar{
+    width: 271px;
+    border-right: 1px solid var(--button-blue);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.sidebar{
+    text-align: center;
+}
