@@ -1,32 +1,31 @@
-// console.log("hello world")
-
-// var name ="chikibambony";
-// let name_2 ="fnaf";
-// const name_3 ="djegr champion";
-
-// console.log(name, name_2, name_3);
-
-// let a = prompt()
-// if (a>18) {
-//     console.log("можно");
-// } else {
-//     console.log("нельзя");
-
-// }
 
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-    
-// }
-// let ac= 0;
-// while (ac < 10) {
-//     console.log(a++)
-
-// }
+let background = document.querySelector("body")
 
 
 
+let chek = document.getElementById("lightmode")
+chek.onclick = function(){
+    if (chek.checked == true){
+  background.style.backgroundImage="url(./assets/images/kartofan.avif)"
+  
+}else{
+    background.style.backgroundImage="url(./assets/images/background-light.png)"
+}
 
+}
 
+let cards = [
+    {
+    title:"заголовок1",
+    text: "просто текст",
+    date: "30.01.24"
+    }
+]
 
+let cardlist = document.querySelector(".card-list")
+cardlist.insertAdjacentHTML("afterbegin",`          <h2>sdjnvefnvejnvej</h2>
+          <p>dfkjvndknjfnvkjn</p>
+          <p>dsgaethethwet</p>
+        </div>
+`);
