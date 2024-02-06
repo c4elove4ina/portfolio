@@ -19,13 +19,33 @@ let cards = [
     {
     title:"заголовок1",
     text: "просто текст",
-    date: "30.01.24"
-    }
+    date: "30.01.24",
+    ispublic:false
+    },
+
+    {
+    title:"заголовок2",
+    text:"просто текст",
+    date: "30.01.24",
+    ispublic:false
+    },
+    {
+    title:"заголовок2",
+    text:"просто текст",
+    date: "30.01.24",
+    ispublic:false
+    },
 ]
 
 let cardlist = document.querySelector(".card-list")
-cardlist.insertAdjacentHTML("afterbegin",`          <h2>sdjnvefnvejnvej</h2>
-          <p>dfkjvndknjfnvkjn</p>
-          <p>dsgaethethwet</p>
+
+
+
+for (let i = 0; i < 3; i++) {
+
+  cardlist.insertAdjacentHTML("afterbegin",`          <h2>${cards[i].title}</h2>
+          <p>${cards[i].text}</p>
+          <p>${cards[i].date}</p>
         </div>
 `);
+}
