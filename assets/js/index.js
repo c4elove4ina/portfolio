@@ -49,3 +49,18 @@ for (let i = 0; i < 3; i++) {
         </div>
 `);
 }
+
+
+
+
+
+
+const t  =setTimeout(function(){
+  console.log("сработала задержка");
+}, 5000);
+
+const i =setInterval(() => {
+  console.log("сработала интервал");
+}, 1000);
+
+clearInterval(i)

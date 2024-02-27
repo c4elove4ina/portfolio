@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #anim {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <img
+      id="anim"
+      src="./png-transparent-train-steam-locomotive-train-train-station-vehicle-transport.png"
+      alt=""
+    />
+    <button id="button">fcyggyuhui</button>
+  </body>
+
+  <script>
+    let anim = document.getElementById("anim");
+    let button = document.getElementById("button");
+    let position = 1;
+    function Click(params) {
+      const t = setInterval(() => {
+        anim.style.left = position + "px";
+        position += 1;
+      }, 1);
+      setTimeout(() => {
+        clearInterval(t);
+      }, 5000);
+    }
+    button.onclick = Click;
+  </script>
+</html>
